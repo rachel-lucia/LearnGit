@@ -1,0 +1,56 @@
+## initialize new git repository in current directory
+git init
+
+## add a remote repository with provided short name and address. SSH preferred
+git remote add SHORTNAME URL/SSH
+git remote add origin https://github.com/rachel-lucia/LinearModeling
+git remote add origin git@github.com:rachel-lucia/LinearModeling.git
+
+## see status of current git repository
+git status
+
+## add a file to your repository [LOCAL]
+## """"STAGING""""
+git add FILENAME
+## add all changes to repository (add, delete, modify)
+git add -A
+
+## commit your changes to your repository [LOCAL]
+git commit -m "COMMENT"
+
+## push changes to specified repo on specified branch name [REMOTE]
+git push -u SHORTNAME BRANCHNAME
+git push -u origin main
+
+## IF U MAKE A CHANGE
+## ADD ("STAGE") > COMMIT > PUSH
+
+
+
+
+
+
+## get remote repo for the first time. gives it the shortname origin
+git clone URL/SSH
+git clone git@github.com:peter-lucia/leetcode.git
+
+## for an existing repo: downloads changes on all branches from specified shortname
+git fetch SHORTNAME
+git fetch origin
+
+## find out what branch you're on
+git branch
+
+## switches to specified branch name
+git checkout main
+## makes a new branch w/ specified name
+git checkout -b NEWBRANCH
+
+## merges specified branch to your current branch
+git merge SHORTNAME
+git merge testing
+
+
+## sets default user and name across all repositories
+git config --global user.email "rachelmlucia@gmail.com"
+git config --global user.name "Rachel Lucia"
